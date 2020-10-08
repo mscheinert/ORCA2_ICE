@@ -34,10 +34,10 @@ Usage is at one's own risk.
 
 |  **Characteristic** | **Specs** |
 |-------------- | -------------- | 
-| **Working repository** | git@github.com:mscheinert/ORCA2_ICE.git | 
-| **Nemo-ocean repository** |  | 
+| **Working repository** | None | 
+| **Nemo-ocean repository** | https://forge.ipsl.jussieu.fr/nemo/svn/NEMO/releases/release-4.0 | 
 | **Branch** | release-4.0 | 
-| **Nemo-ocean revision** |  | 
+| **Nemo-ocean revision** | 13449 | 
 | **Components** | OCE, TOP, ICE, NST | 
 | **Reference Configuration** |  -  | 
 | **CPP keys** |   key_si3      | 
@@ -147,7 +147,7 @@ Within NEMOGCM directory:
 
 ~~~bash
 cd $WORK/NEMO-release-4.0
-git remote add -f remote_ORCA2_ICE-REF git@git.geomar.de:NEMO/EXP/ORCA2_ICE-REF.git   # add remote
+git remote add -f remote_ORCA2_ICE-REF git@github.com:immerse-project/ORCA2_ICE-REF.git   # add remote
 git subtree add --prefix CONFIG/ORCA2_ICE-REF remote_ORCA2_ICE-REF release-4.0:-master --squash     # donwload master branch into sub-folder
 cat cfgs/ORCA2_ICE-REF/REF/exp_cfg.txt >> cfgs/work_cfgs.txt
 ~~~
@@ -158,7 +158,7 @@ Or even shorter, without keeping remote source information (not recommended):
 
 ~~~bash
 cd $WORK/NEMO-release-4.0
-git subtree add --prefix cfgs/ORCA2_ICE-REF git@git.geomar.de:NEMO/EXP/ORCA2_ICE-REF.git release-4.0:-master --squash
+git subtree add --prefix cfgs/ORCA2_ICE-REF git@github.com:immerse-project/ORCA2_ICE-REF.git release-4.0:-master --squash
 cat cfgs/ORCA2_ICE-REF/REF/exp_cfg.txt >> cfgs/work_cfgs.txt
 ~~~
 
