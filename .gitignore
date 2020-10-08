@@ -1,0 +1,6 @@
+BLD
+WORK
+EXP00
+**/*.bak
+**/*.tar
+**/*.swp

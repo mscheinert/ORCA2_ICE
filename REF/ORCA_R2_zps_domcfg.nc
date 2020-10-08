@@ -1,0 +1,1 @@
+/DATA/mscheinert/climPOGCM/ORCA2/ORCA_R2_zps_domcfg.nc
